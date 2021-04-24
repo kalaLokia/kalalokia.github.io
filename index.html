@@ -2,6 +2,9 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>kalaLokia</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
@@ -14,44 +17,60 @@
             background-color: #000000;
             font-family: 'Montserrat', sans-serif;
             color: #CEE6B4;
+            text-align: center;
         }
 
-        h2 {
+        .container {
+            display: flex;
+            flex-direction: column;
+            --h: 100vh;
+            height: var(--h);
+        }
+
+        #greet {
             font-family: 'Stalemate', cursive, serif;
-            text-align: center;
             font-weight: 500;
-            font-size: 2.5rem;
+            font-size: calc((var(--h) / 22));
+            color: #FFDF6B;
             margin-block-end: 0;
             padding-bottom: 0;
+            position: relative;
+            right: 8%;
+
         }
-        
+
         #me {
             font-family: 'Indie Flower', cursive, serif;
-            font-size: 3.5rem;
+            font-size: calc((var(--h) / 16));
+            font-weight: 700;
             color: #FF9292;
             text-orientation: upright;
             writing-mode: vertical-rl;
-            margin-left: auto;
-            margin-right: auto;
         }
 
         .code-block {
+            font-size: calc((var(--h) / 60));
+            position: absolute;
+            bottom: 5%;
+            right: 5%;
             font-family: 'Source Code Pro', monospace, serif;
-            color: #542E82;
-            text-align: end;
-            margin: 10%;
-
+            color: #fdbaf8;
         }
     </style>
 </head>
 
 <body>
-    <div>
-        <h2>Hi there! I am,</h1>
-        <div id="me">kalaLokia</div>
-        <div class="code-block">this is my testing ground, btw;</div>
+    <div class="container">
+        <h2 id="greet">Hi there! I am,</h1>
+            <div>
+                <span id="me">KALALOKIA</span>
+            </div>
+            <div>
+                <span class="code-block">this is my testing ground, btw;</span>
+            </div>
     </div>
 
+
 </body>
- 
+
 </html>
