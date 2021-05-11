@@ -1,5 +1,5 @@
 # My Self
 
-https://kalalokia.github.io/me/
+https://kalalokia.github.io/
 
 > * *This is just a page on the web that I own, I guess. It will have more contents and will be functional after some years I suppose or it will stay as dead like me.*
